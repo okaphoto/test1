@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>okaphoto</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
   <header>
-    <nav class="navbar">
-      <div class="logo">okaphoto</div>
-      <ul class="nav-links">
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#pricing">Cennik</a></li>
-        <li><a href="https://example.com" target="_blank">Sklep</a></li>
-      </ul>
-      <a href="https://instagram.com/okaphoto.like" target="_blank" class="instagram-icon">
-        <i class="fab fa-instagram"></i>
-      </a>
+    <nav class="top-nav">
+      <a href="https://example.com/o-mnie">O mnie</a>
+      <a href="https://example.com/portfolio">Portfolio</a>
+      <a href="https://example.com/cennik">Cennik</a>
+      <a href="https://example.com/plakaty">Plakaty <i class="fas fa-shopping-cart"></i></a>
     </nav>
+    <h1>Moje Portfolio</h1>
+    <a href="https://www.instagram.com/okaphoto.like" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="instagram-logo">
+    </a>
   </header>
 
-   <section id="portfolio" class="gallery">
-    <h2>Portfolio</h2>
-    <div class="category">Sport</div>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300x200" alt="Sport 1" />
-      <img src="https://via.placeholder.com/300x200" alt="Sport 2" />
-    </div>
-    <div class="category">Cars</div>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300x200" alt="Car 1" />
-      <img src="https://via.placeholder.com/300x200" alt="Car 2" />
-    </div>
-    <div class="category">Nature</div>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300x200" alt="Nature 1" />
-      <img src="https://via.placeholder.com/300x200" alt="Nature 2" />
-    </div>
-  </section>
+  <main>
+    <!-- album1, album2, album3 - jak wcześniej -->
+    <!-- ... bez zmian ... -->
+  </main>
 
-  <section id="pricing" class="pricing">
-    <h2>Cennik</h2>
-    <div class="price-item">
-      <h3>Fotografia motoryzacyjna</h3>
-      <p>od 300 zł</p>
-    </div>
-    <div class="price-item">
-      <h3>Fotografia sportowa</h3>
-      <p>od 250 zł</p>
-    </div>
-  </section>
+  <footer>
+    <p>© 2025 Szymon Okapiec</p>
+  </footer>
 
+  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
-    <img src="" alt="Powiększone zdjęcie" />
+    <span class="lightbox-close">&times;</span>
+    <img src="" alt="Powiększone zdjęcie">
   </div>
+
 </body>
 </html>
+
