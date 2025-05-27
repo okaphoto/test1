@@ -1,18 +1,22 @@
-document.querySelectorAll('.gallery img').forEach(image => {
-  image.addEventListener('click', () => {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = lightbox.querySelector('img');
-    lightboxImg.src = image.src;
-    lightbox.style.display = 'flex';
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".gallery img");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      if (img.classList.contains("enlarged")) {
+        img.classList.remove("enlarged");
+      } else {
+        document.querySelectorAll(".enlarged").forEach(enlargedImg => {
+          enlargedImg.classList.remove("enlarged");
+        });
+        img.classList.add("enlarged");
+      }
+    });
   });
-});
 
-document.querySelector('.lightbox-close').addEventListener('click', () => {
-  document.getElementById('lightbox').style.display = 'none';
-});
-
-document.getElementById('lightbox').addEventListener('click', (e) => {
-  if (e.target === e.currentTarget) {
-    e.currentTarget.style.display = 'none';
-  }
+  document.addEventListener("click", (e) => {
+    if (e.target.tagName !== "IMG" && document.querySelector(".enlarged")) {
+      document.querySelector(".enlarged").classList.remove("enlarged");
+    }
+  });
 });
