@@ -93,5 +93,13 @@
     <img src="" alt="Powiększone zdjęcie">
   </div>
 
+<script>
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('zoomed');
+    });
+  });
+</script>
+
 </body>
 </html>
