@@ -1,0 +1,148 @@
+<!-- style.css -->
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+
+  header {
+    background-color: #111;
+    color: white;
+    padding: 1rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-links a, .instagram-icon {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover, .instagram-icon:hover {
+    color: #aaa;
+  }
+
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .gallery {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .gallery h2, .pricing h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .category {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .gallery-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+
+  .pricing {
+    padding: 2rem;
+    background-color: #eee;
+  }
+
+  .price-item {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .gallery-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
