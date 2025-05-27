@@ -12,20 +12,25 @@
 <body>
 
   <header>
-    <nav class="top-nav">
-      <a href="https://example.com/o-mnie">O mnie</a>
-      <a href="https://example.com/portfolio">Portfolio</a>
-      <a href="https://example.com/cennik">Cennik</a>
-      <a href="https://example.com/plakaty">Plakaty <i class="fas fa-shopping-cart"></i></a>
-    </nav>
     <h1>Moje Portfolio</h1>
+    <nav class="nav-links">
+      <a href="#o-mnie">O mnie</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#plakaty">Plakaty <i class="fas fa-shopping-cart"></i></a>
+    </nav>
     <a href="https://www.instagram.com/okaphoto.like" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="instagram-logo">
     </a>
   </header>
 
   <main>
-    <section id="album1" class="album">
+    <section id="o-mnie" class="album">
+      <h2>O mnie</h2>
+      <p style="text-align:center; color:white;">Tutaj możesz umieścić opis o sobie.</p>
+    </section>
+
+    <section id="portfolio" class="album">
       <h2>Sport</h2>
       <div class="gallery">
         <img src="https://i.imgur.com/9OAO9zR.jpeg" alt="Zdjęcie 1">
@@ -44,7 +49,7 @@
       </div>
     </section>
 
-    <section id="album2" class="album">
+    <section class="album">
       <h2>Cars</h2>
       <div class="gallery">
         <img src="https://i.imgur.com/J4wfqMn.jpeg" alt="Zdjęcie 1">
@@ -58,7 +63,7 @@
       </div>
     </section>
 
-    <section id="album3" class="album">
+    <section class="album">
       <h2>Nature</h2>
       <div class="gallery">
         <img src="https://i.imgur.com/vMXotnB.jpeg" alt="Zdjęcie 1">
@@ -67,13 +72,22 @@
         <img src="https://i.imgur.com/ITY6U7h.jpeg" alt="Zdjęcie 4">
       </div>
     </section>
+
+    <section id="cennik" class="album">
+      <h2>Cennik</h2>
+      <p style="text-align:center; color:white;">Tutaj możesz dodać cennik usług.</p>
+    </section>
+
+    <section id="plakaty" class="album">
+      <h2>Plakaty</h2>
+      <p style="text-align:center; color:white;">Tu możesz dodać informacje o plakatach do kupienia.</p>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 Szymon Okapiec</p>
   </footer>
 
-  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close">&times;</span>
     <img src="" alt="Powiększone zdjęcie">
@@ -81,5 +95,3 @@
 
 </body>
 </html>
-
-
